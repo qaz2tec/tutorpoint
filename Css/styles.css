@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav{
+    ul{
+        div{
+            img{
+                width: 33%;
+                border: solid white;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+
+.nav-list {
+    width: 70%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+
+
+    >li{
+        list-style: none;
+        padding: 26px 30px;
+
+        >a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.nav-list li a:hover{
+    color: grey;
+}
+
+.rightnav{
+/* background-color: purple; */
+width: 30%;
+text-align: right;
+padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('../Img/buildings.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firsthalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf{
+    width: 30%;
+    img{
+        width: 70%;
+        border: 4px solid white;
+        border-radius: 150px;
+        display: block;
+        margin: auto;
+    }
+}
+
+.text-big{
+    font-size: 34px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    background: none;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.section{
+  padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0 65px;
+}
+
+.sectiontag{
+    padding: 16px 0;
+}
+
+.sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact{
+    background-color: rgb(202, 218, 231);
+    height: 633px;
+
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 35px;
+
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+
+
+    
+}
+
+.form-input{
+    width: 100%;
+    margin: 14px 0;
+    padding: 5px 13px;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+}
+
+.footer-center{
+    text-align: center;
+    padding: 10px 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #363333;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 4px;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height:480px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+}
